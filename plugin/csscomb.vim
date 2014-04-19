@@ -21,5 +21,5 @@ function! g:CSScomb()
     call setline(a:line1, lines)
 endfunction
 
-#command! -nargs=? -range=% CSScomb :call g:CSScomb(<count>, <line1>, <line2>, <f-args>)
+"command! -nargs=? -range=% CSScomb :call g:CSScomb(<count>, <line1>, <line2>, <f-args>)
 command! CSScomb :call g:CSScomb()
