@@ -15,8 +15,8 @@ function! g:CSScombOLD(count, line1, line2)
 endfunction
 
 function! g:CSScomb()
-    "let content = join(getline(a:line1, a:line2), "\n")
-    let res = system("csscomb ", vim.current.buffer)
+    let content = join(getline(a:line1, a:line2), "\n")
+    "let res = system("csscomb ", vim.current.buffer)
     let lines = split(res, "\n")
     call setline(a:line1, lines)
 endfunction
